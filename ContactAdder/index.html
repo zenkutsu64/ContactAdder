@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contact Adder App</title>
+    <style type="text/css">
+        #Department {
+            width: 217px;
+        }
+        #Text1 {
+            width: 316px;
+        }
+        #Company {
+            height: 16px;
+            width: 265px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/api/contacts" id="ContactAddForm">
+        <div>
+            <h2>Add Contact to Act! - January 31 -index.html</h2>
+            <p>
+            <input type="text" id="contactname" size="30" placeholder="Full Name" /></p>
+            <p>
+                <input id="Title"  placeholder="Title" type="text" /><input id="Department"  placeholder="Department" type="text" /></p>
+            &nbsp;<input id="Company" placeholder="Company" type="text" /><br />
+            <input type="text" id="mainemail" size="25" placeholder="Email Address" />
+            <input type="button" value="Add" id="addbutton" /> 
+ <!--          <input type="submit" value="Add" /> -->
+<!--        <p id="contact" /> -->
+        </div>
+    </form>
+
+    <div>
+        <h2>Static Contacts - GET using localhost/contactadder</h2>
+     <!--   <ul id="contacts" visible="true" /> -->
+        <ul id="contacts" />
+    </div>
+
+         <div>
+        <h2>Errors</h2>
+             <ul id="errors" />
+          <!--  <ul id="errors" visible="true" /> -->
+    </div>
+        
+        <script src="./Javascript/jquery-2.1.1.js"></script>
+        <script src="./Javascript/contactaddermain.js"></script>
+
+</body>
+</html>
